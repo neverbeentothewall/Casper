@@ -15,9 +15,8 @@
     <footer class="post-meta">
         {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
         {{author}}
-        <span style="float:right"></span><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></span>
-        <hr>{{tags prefix=" Tagged: "}}
-
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" style="float:right">{{date format="DD MMMM YYYY"}}</time>
+        <br/>{{tags prefix=" Tagged: "}}
     </footer>
 </article>
 {{/foreach}}
